@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body style="background-color: #1A3B32;">
+
+    <h1 style="color: beige; text-align: center;">Programming Training Center</h1>
+    <hr>
+
+
+    <!-- 3. نموذج التسجيل
+أنشئ نموذجًا يحتوي على:
+- الاسم الكامل، البريد الإلكتروني، رقم الهاتف وكلمة المرور.
+- قائمة select لاختيار الدورة.
+- أزرار radio لاختيار طريقة الدراسة: حضوري أو أونلاين.
+- مربعات checkbox لاختيار المهارات: HTML وCSS وJavaScript.
+- حقل لرفع صورة شخصية، ومساحة textarea لكتابة ملاحظات.
+- زر Register وزر Reset.
+شروط التمرين:
+- اجمع المعلومات الشخصية داخل fieldset مع عنوان باستخدام legend.
+- اجعل الاسم والبريد الإلكتروني وكلمة المرور حقولًا مطلوبة.
+- اربط كل حقل بالـ label المناسب.
+- استخدم name وvalue حيث يلزم.
+- أضف بعض الـ placeholder المناسبة -->
+
+
+    <!-- <form action="edu.html" method="get">
+        <div>
+            <label for="username">Username</label> <br>
+            <input type="text" id="username" placeholder="2026" name="user">
+        </div>
+        <br>
+        <div>
+            <label for="pass">Password</label> <br>
+            <input type="password" id="pass" name="pass">
+        </div>
+        <br>
+        <div>
+            <label for="bio">bio</label> <br>
+            <textarea rows="5" id="bio" name="bio"></textarea>
+        </div>
+        <br>
+       
+        <button type="button">Button</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- حطيت كود الهندسه لاني ضليت انسى الاسامي -->
+
+    <form action="ty.html" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend style="color: beige;">Registration Form</legend>
+
+            <div>
+
+                <label for="name" style="color: beige;">Name</label>
+                <input type="text" name="name" id="name" placeholder="ex: Joe Martin" required>
+            </div>
+            <br>
+            <div>
+                <label for="Email" style="color: beige;">Email</label>
+                <input type="email" name="Email" id="Email" placeholder="example@test.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="Phone Number" style="color: beige;">Phone Number</label>
+                <input type="tel" name="Phone Number" id="Phone Number" placeholder="ex: 00972567798867">
+            </div>
+            <br>
+            <div>
+                <label for="Password" style="color: beige;">Password</label>
+                <input type="password" name="Password" id="Password" placeholder="Enter Your Password" required>
+            </div>
+            <br>
+            <div>
+                <label for="courses" style="color: beige;">Select course</label>
+                <select name="courses" id="courses">
+                    <option value="">Courses</option>
+                    <option value="">C#</option>
+                    <option value="">C++</option>
+                    <option value="">Java</option>
+                    <option value="">Kotlin</option>
+                    <option value="">Html</option>
+                    <option value="">CSS</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div>
+                <!-- Label is used for everything in a field, what changins is the type
+             then if u want the radio to chose only one value and not multiple u give them the same name -->
+                <label style="color: beige;">How will you be attending?</label>
+                <br>
+                <input type="radio" value="Online" name="attend" id="Online">
+                <label for="Online" style="color: beige;">Online</label>
+                <br>
+                <input type="radio" value="IRL" name="attend" id="IRL">
+                <label for="IRL" style="color: beige;">IRL Meeting</label>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label style="color: beige;">Skills</label>
+                <br>
+                <label for="Java" style="color: beige;">
+                    <input type="checkbox" name="Java" id="Java">
+                    Java
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="CSS" style="color: beige;">
+                    <input type="checkbox" name="CSS" id="CSS">
+                    CSS
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="JS" style="color: beige;">
+                    <input type="checkbox" name="JS" id="JS">
+                    JS
+                </label>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label style="color: beige;" for="img">Insert Personal Image</label>
+                <br>
+                <input type="file" name="img" id="img">
+            </div>
+            <br>
+            <br>
+            <div>
+                <label style="color: beige;" for="feedback">Feedback</label>
+                <br>
+                <textarea name="feedback" id="feedback" placeholder="write us something!" rows="12"
+                    cols="35"></textarea>
+            </div>
+            <br>
+            <br>
+            <div>
+                <center>
+                    <button type="submit">Sumbit</button>
+                    <button type="reset">Reset</button>
+                </center>
+            </div>
+        </fieldset>
+    </form>
+
+
+    <div>
+        <a href="index.html" style="color: beige;">
+            <p style="text-align: center;">Homepage</p>
+        </a>
+        <a href="edu.html" style="color: beige;">
+            <p style="text-align: center;">Education Site</p>
+        </a>
+    </div>
+
+    <footer>
+        <p style="color: beige; text-align: center;">All Rights Reserved, <a href="https://www.instagram.com/yznx18"
+                target="_blank" style="color: burlywood;">Yzn
+                M.S. Yasin</a></p>
+    </footer>
+</body>
+
+</html>
